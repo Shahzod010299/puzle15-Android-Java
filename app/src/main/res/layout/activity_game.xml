@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <RelativeLayout
+        android:id="@+id/gropup_relative_layout"
+        android:layout_width="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/btn_default"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/button_1"            style="@style/ButtonStyle"
+            android:onClick="buttonClick"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:tag="00"
+            android:text="1"/>
+        <Button
+            android:id="@+id/button_2"            style="@style/ButtonStyle"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:onClick="buttonClick"
+            android:layout_toEndOf="@id/button_1"
+            android:tag="01"
+            android:text="2" />
+        <Button
+            android:id="@+id/button_3"            style="@style/ButtonStyle"
+            android:onClick="buttonClick"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_2"
+            android:tag="02"
+            android:text="3" />
+        <Button
+            android:id="@+id/button_4"            style="@style/ButtonStyle"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:onClick="buttonClick"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/button_3"
+            android:tag="03"
+            android:text="4" />
+        <Button
+            android:id="@+id/button_5"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_1"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:onClick="buttonClick"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:tag="10"
+            android:text="5" />
+        <Button
+            android:id="@+id/button_6"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_1"
+            android:layout_margin="2dp"
+            android:onClick="buttonClick"
+            android:layout_toEndOf="@id/button_5"
+            android:tag="11"
+            android:text="6" />
+        <Button
+            android:id="@+id/button_7"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_4"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_6"
+            android:tag="12"
+            android:onClick="buttonClick"
+            android:text="7" />
+        <Button
+            android:id="@+id/button_8"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_4"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_7"
+            android:tag="13"
+            android:onClick="buttonClick"
+            android:text="8" />
+        <Button
+            android:id="@+id/button_9"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_5"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:tag="20"
+            android:onClick="buttonClick"
+            android:text="9" />
+        <Button
+            android:id="@+id/button_10"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_5"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_9"
+            android:tag="21"
+            android:onClick="buttonClick"
+            android:text="10" />
+        <Button
+            android:id="@+id/button_11"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_5"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_10"
+            android:tag="22"
+            android:onClick="buttonClick"
+            android:text="11" />
+        <Button
+            android:id="@+id/button_12"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_5"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_11"
+            android:tag="23"
+            android:onClick="buttonClick"
+            android:text="12" />
+        <Button
+            android:id="@+id/button_13"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_9"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:tag="30"
+            android:onClick="buttonClick"
+            android:text="13" />
+        <Button
+            android:id="@+id/button_14"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_9"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_13"
+            android:tag="31"
+            android:onClick="buttonClick"
+            android:text="14" />
+        <Button
+            android:id="@+id/button_15"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_9"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_14"
+            android:tag="32"
+            android:onClick="buttonClick"
+            android:text="15" />
+        <Button
+            android:id="@+id/button_16"            style="@style/ButtonStyle"
+            android:layout_below="@id/button_9"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/button_15"
+            android:background="@color/bg_button"
+            android:onClick="buttonClick"
+            android:tag="33"
+            android:text="" />
+    </RelativeLayout>
+</FrameLayout>
